@@ -58,7 +58,7 @@ jobs:
           aws-region: us-east-1
       - name: Update function code
         run: |
-            aws lambda update-function \
+            aws lambda update-function-code \
               --function-name my-function \
               --s3-bucket acg-bucket-dm24 \
               --s3-key ${{ github.sha }}.zip \
